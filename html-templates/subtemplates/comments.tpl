@@ -30,7 +30,7 @@
         </form>
     {else}
         {capture assign=loginTextLink}<a class="button primary" href="/login?return={$Context->getURL()|escape:url}">{_ "Log in"}</a>{/capture}
-        <p class="login-hint well">{sprintf(_("$s to post a comment."), $loginTextLink)}</p>
+        <p class="login-hint well">{sprintf(_("%s to post a comment."), $loginTextLink)}</p>
     {/if}
 {/template}
 
