@@ -8,7 +8,7 @@
     <header class="page-header">
         <h2>
             {if $Update->isPhantom}
-                {_ "Create new project upate"}
+                {_ "Create new project update"}
             {else}
                 {capture assign=projectUpdateLink}<a href="/projects/{$Update->Project->Handle}/updates/{$Update->Number}">{_("Update #%u")|sprintf:$Update->Number}</a>{/capture}
                 {sprintf(_("Edit %s"), $projectUpdateLink)}
